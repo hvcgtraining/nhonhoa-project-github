@@ -1,0 +1,22 @@
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+  flex-wrap: wrap; }
+
+.container-flex-right {
+  display: flex;
+  justify-content: flex-end; }
+
+.btn-indent {
+  display: inline-block;
+  padding-right: 1rem; }
+
+.container-flex-left {
+  display: flex;
+  justify-content: flex-start; }
+
+.container-flex-middle {
+  display: flex;
+  justify-content: center; }

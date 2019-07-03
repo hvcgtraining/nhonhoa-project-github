@@ -1,0 +1,58 @@
+.parent-product {
+  position: relative; }
+  .parent-product span {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    .parent-product span input[type="number"]::-webkit-inner-spin-button,
+    .parent-product span input[type="number"]::-webkit-outer-spin-button {
+      opacity: 1; }
+  .parent-product p {
+    padding-right: 1rem; }
+  .parent-product .wrap-product-number {
+    width: 28rem;
+    display: block; }
+
+.tree-view {
+  width: 200px; }
+  .tree-view p {
+    padding-left: 1.5rem; }
+  .tree-view ul {
+    transition: 1s;
+    list-style-type: none; }
+    .tree-view ul .parent-tv {
+      display: flex;
+      user-select: none; }
+      .tree-view ul .parent-tv::before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f105 ";
+        color: #656565;
+        font-weight: bold;
+        display: inline-block;
+        margin-right: 0.5rem;
+        transition: 0.3s; }
+
+.wrap-ul-tv {
+  animation-name: example;
+  animation-duration: 0.5s;
+  padding-left: 4rem;
+  display: none;
+  width: 100%; }
+
+.icon-change::before {
+  transform: rotate(90deg); }
+
+.active-treeview {
+  display: block; }
+
+input.productNumber {
+  width: 4rem; }
+
+.child-item {
+  display: flex; }
+
+@keyframes example {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }

@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+.login-page {
+  background: url("../../../dist/assets/images/50-Beautiful-and-Minimalist-Presentation-Backgrounds-04.jpg");
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+  .login-page .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5); }
+  .login-page .login-layout {
+    position: relative; }
+  .login-page .login-overplay {
+    z-index: 1;
+    position: absolute;
+    top: 1rem;
+    bottom: 1rem;
+    right: -1rem;
+    width: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 1.5rem;
+    color: #2EAE49; }
+  .login-page .login-box {
+    position: relative;
+    top: 45%;
+    left: 0;
+    z-index: 2;
+    width: 280px;
+    color: #666666;
+    background: white;
+    text-align: center; }
+    .login-page .login-box h1 {
+      padding: 1rem 0; }
+    .login-page .login-box .textbox {
+      padding: 1rem 2rem; }
+      .login-page .login-box .textbox input {
+        width: 100%;
+        padding: 0.5rem 0;
+        background: none;
+        border: none;
+        border-bottom: 1px solid #2EAE49;
+        outline: none; }
+    .login-page .login-box .submit-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem; }
+      .login-page .login-box .submit-box input {
+        border: none;
+        background: #2EAE49;
+        padding: 0.8rem 1.5rem;
+        border-radius: 2rem;
+        outline: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        color: white;
+        transition: 0.3s; }
+        .login-page .login-box .submit-box input:hover {
+          background: #45d665; }
+
+@media only screen and (max-width: 992px) {
+  .login-page .login-overplay {
+    z-index: 1;
+    position: absolute;
+    top: -50%;
+    bottom: 50%;
+    left: -3rem;
+    right: -3rem;
+    width: auto;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: block;
+    text-align: center;
+    color: #2EAE49;
+    padding: 3rem 0; } }
