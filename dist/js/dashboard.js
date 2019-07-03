@@ -79,4 +79,9 @@ $(".sibar-menu-item").click(function (e) {
 //      else {
 //     $(".sidebar-item.selected").removeClass('selected');
 //     }
-// })
+// })  
+
+$(function () {
+  $("#tabs-horizontal").tabs();
+  $("#tabs-vertical").tabs();
+});
