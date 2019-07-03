@@ -1071,11 +1071,11 @@ body, td, th, input, button {
               box-shadow: none; }
             .dashboard .dashboard-nav .dashboard-menu .menu-sub .notifi__box li .menu-sub-right {
               position: absolute;
-              top: -1%;
+              top: -3%;
               left: 100%;
               display: none; }
               .dashboard .dashboard-nav .dashboard-menu .menu-sub .notifi__box li .menu-sub-right li a {
-                padding: 1.7rem 0; }
+                padding: 0.5rem 0; }
             .dashboard .dashboard-nav .dashboard-menu .menu-sub .notifi__box li:hover .menu-sub-right {
               display: block; }
             .dashboard .dashboard-nav .dashboard-menu .menu-sub .notifi__box li p {
