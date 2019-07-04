@@ -404,7 +404,7 @@
           top: 1500px;
           transform: translate(-50%, -50%); }
         .dashboard .dashboard-nav .popup-lock .lock-pass .text-vali {
-          color: red;
+          color: #31b131;
           font-size: 16px;
           position: absolute;
           top: -50px;
@@ -425,10 +425,10 @@
           outline: none;
           border: none;
           background-color: #fff;
-          box-shadow: 0px 0px 45px 5px red; }
+          box-shadow: 0px 0px 45px 5px #31b131; }
           .dashboard .dashboard-nav .popup-lock .lock-pass .btn-lock-open i {
             font-size: 32px;
-            color: red; }
+            color: #31b131; }
     .dashboard .dashboard-nav .profile__img {
       border-radius: 50%;
       overflow: hidden;
@@ -505,7 +505,7 @@
         .dashboard .row .dashboard-sidebar .sidebar-menu .sibar-menu-sub li a {
           text-decoration: none;
           display: block;
-          padding: 16px 0 16px 15px;
+          padding: 16px 0 16px 0px;
           font-size: 14px;
           outline: none;
           color: black;
@@ -532,7 +532,7 @@
           .dashboard .row .dashboard-sidebar .sidebar-menu .sibar-menu-sub .sibar-menu-sub-lv3 li a {
             text-decoration: none;
             display: block;
-            padding: 16px 0 16px 30px;
+            padding: 16px 0 16px 10px;
             font-size: 14px;
             outline: none;
             color: black;
@@ -576,7 +576,7 @@
         .dashboard .row .administrator a:hover i {
           color: #ff8873; }
   .dashboard .row .content {
-    background: #F7FAFD;
+    background: #eeeeee;
     width: calc(100% - 24rem);
     height: 100vh;
     padding: 0;

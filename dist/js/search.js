@@ -3,29 +3,50 @@
 
 $(".btn-advanced").click(function () {
   $(".search-advanced").toggleClass("show");
-}); // var name = [
-//     'Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California',
-//     'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 
-//     'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 
-//     'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 
-//     'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 
-//     'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire',
-//     'New Jersey', 'New Mexico', 'New York', 'North Carolina', 
-//     'North Dakota', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 
-//     'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 
-//     'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 
-//     'West Virginia', 'Wisconsin', 'Wyoming'
-//   ];
-// var maso = [
-//     'MS0001', 'MS0002', 'MS0003', 'MS0004', 'MS0005',
-//     'MS0006', 'MS0007', 'MS0008', 'MS0009', 'MS0010', 
-//     'MS0011', 'MS0012'
-// ];
-//   $(function() {
-//     $("#name").autocomplete({
-//       source:[name]
-//     }); 
-//     $("#maso").autocomplete({
-//         source:[maso]
-//       }); 
-//   });
+});
+
+function searchname() {
+  // Declare variables 
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr"); // Loop through all table rows, and hide those who don't match the search query
+
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[2];
+
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+
+function searchmaso() {
+  // Declare variables 
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("maso");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr"); // Loop through all table rows, and hide those who don't match the search query
+
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}

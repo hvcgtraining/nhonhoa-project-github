@@ -39,17 +39,23 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   block.addEventListener('click', function () {
     this.classList.add('hide-in');
-    passin.classList.add('show-in'); // if(passin.className === "pass-in show-in"){
-    //     var delay = setTimeout(function (){
-    //         block.classList.remove('hide-in');
-    //         passin.classList.remove('show-in');
-    //         passin.value = "";
-    //         error.classList.remove('toggleMenu');
-    //     }, 10000);
-    // }
-    // else if(popup.className === 'popup-lock'){
-    //     clearTimeout(delay());
-    //     delay();
-    // }
+    passin.classList.add('show-in');
+  });
+});
+$(function () {
+  $('#mytbl tr').click(function (e) {
+    var taikhoan = $(this).closest('.tr').find('td:nth-child(2)').text();
+    var matkhau = $(this).closest('.tr').find('td:nth-child(3)').text();
+    var hoten = $(this).closest('.tr').find('td:nth-child(4)').text();
+    var chucdanh = $(this).closest('.tr').find('td:nth-child(5)').text();
+    var quyen = $(this).closest('.tr').find('td:nth-child(6)').text();
+    $('.tr').click(function (e) {
+      /*e.preventDefault();*/
+      $('#user').val(taikhoan);
+      $('#password').val(matkhau);
+      $('#hovaten').val(hoten);
+      $('#chucdanh').val(chucdanh);
+      $('#quyen').val(quyen);
+    });
   });
 });

@@ -1,5 +1,5 @@
 .search {
-  background-color: #8f929c1f;
+  overflow: hidden;
   border-radius: 4px;
   padding: 1.5rem; }
   .search .show {
@@ -28,7 +28,7 @@
         padding-left: 1.5rem;
         border-radius: 4px;
         font-size: 1.2rem;
-        width: 80%; }
+        width: 100%; }
         .search .wrapper-search .search-df .ip-df:focus {
           outline: none; }
     .search .wrapper-search .search-btn-advanced .btn-advanced {
@@ -36,12 +36,8 @@
       width: 100%; }
   .search .search-advanced {
     display: none;
-    transition: all .5s ease;
+    transition: all .5s ease !important;
     transform: translateY(300px); }
-    .search .search-advanced .xdsoft_autocomplete {
-      width: 100% !important; }
-      .search .search-advanced .xdsoft_autocomplete .ip-advanced.xdsoft_input {
-        background-color: #fff !important; }
     .search .search-advanced .box-ip-advanced {
       display: flex;
       justify-content: space-between; }

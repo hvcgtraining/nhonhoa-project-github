@@ -1,8 +1,5 @@
 .plans {
-  position: relative;
-  padding: 0 1rem; }
-  .plans .category__create-btn button {
-    margin: 1rem 1rem 1rem 0; }
+  position: relative; }
   .plans .code-week {
     top: .5rem;
     left: .5rem;
@@ -24,7 +21,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 3rem 0 7rem 0; }
+    margin-bottom: 1.5rem; }
     .plans .plans__notes input {
       flex-basis: 90%; }
     .plans .plans__notes span {
@@ -35,12 +32,12 @@
   .plans .plans__btn {
     display: flex;
     justify-content: flex-end;
-    padding: 3rem 0; }
+    margin-bottom: 1.5rem; }
   .plans .plans__tables {
     display: flex;
     justify-content: space-between; }
     .plans .plans__tables .plans__tables-single .plans__tables-title {
-      margin: 2rem 0; }
+      margin-bottom: 1.5rem; }
     .plans .plans__tables .plans__tables-single .plans__tables-title {
       display: flex;
       justify-content: flex-start; }
@@ -57,8 +54,8 @@
 
 .plans__title {
   text-align: center !important;
-  padding-top: 4rem;
+  padding-top: 1.5rem;
   line-height: 1;
-  margin-bottom: 3rem; }
+  margin-bottom: 1.5rem; }
   .plans__title span {
     font-size: 1.8rem; }

@@ -25,6 +25,7 @@ clicka.addEventListener("click", function () {
 //     })
 // })
 
+$(".nav-fist").click(function (e) {});
 $(".nav-box1").click(function (e) {
   e.stopPropagation(); // Ngan chan su kien click lan toa ra thang cha
   // Ẩn het toan bo nhung thang khac

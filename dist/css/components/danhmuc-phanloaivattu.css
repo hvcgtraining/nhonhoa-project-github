@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   flex-wrap: wrap; }
 
 .container-flex-right {
@@ -11,7 +11,8 @@
 
 .btn-indent {
   display: inline-block;
-  padding-right: 1rem; }
+  padding-right: 1rem;
+  margin-top: 1.5rem; }
 
 .container-flex-left {
   display: flex;
