@@ -1,0 +1,30 @@
+.form-search .form-item-input {
+  margin-bottom: 2rem; }
+
+.form-search input {
+  width: 100% !important;
+  padding: .8rem .5rem;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #333;
+  display: block; }
+
+.form-search label {
+  padding-left: 1.5rem;
+  width: 10rem;
+  font-size: 16px; }
+
+.form-search input[type=number] {
+  width: 80% !important; }
+
+.form-search select {
+  margin: 0 2.5rem 0 1.5rem; }
+
+.w-8 {
+  width: 9.1rem !important; }
+
+.w-100 {
+  width: 100%; }
+
+.d-flex {
+  display: flex !important; }

@@ -6,6 +6,8 @@ clicka.addEventListener("click", function () {
   menu01.classList.toggle("setwidth");
   var menu01 = document.getElementById("toggleclicka");
   menu01.classList.toggle("setwidtha");
+  var menu01 = document.getElementById("toggleclickb");
+  menu01.classList.toggle("setwidthb");
 }); // $(".nav-box").each(function(index,value){
 //     var nav = $(value);
 //     var nav01 = nav.find(".dropdownmenu");
